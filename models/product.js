@@ -73,3 +73,7 @@ module.exports = class Product {
     });
   }
 };
+const newFeature = function () {
+  console.log("Welcome to new feature application");
+};
+newFeature();
