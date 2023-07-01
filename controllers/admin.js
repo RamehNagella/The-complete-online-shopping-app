@@ -68,11 +68,13 @@ exports.getProducts = (req, res, next) => {
     });
   });
 };
-
+const newFeature = function () {
+  console.log("welcome to new feature");
+};
 exports.postDeleteProduct = (req, res, next) => {
   const prodId = req.body.productId;
   console.log("%%%>>>", prodId);
   Product.deleteById(prodId);
-
+  newFeature();
   res.redirect("/admin/products");
 };
