@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
 * {
   box-sizing: border-box;
@@ -7,15 +7,25 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 main {
   padding: 1rem;
   margin: auto;
 }
+form {
+  display: inline;
+}
 .centered {
   text-align: center;
+}
+.image {
+  height: 20rem;
+}
+
+.image img {
+  height: 100%;
 }
 
 .main-header {
@@ -23,12 +33,16 @@ main {
   height: 3.5rem;
   background-color: #00695c;
   padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
 }
 
 .main-header__nav {
   height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .main-header__item-list {
@@ -108,4 +122,30 @@ main {
 .btn:active {
   background-color: #00695c;
   color: white;
+}
+
+/* .btn.danger:hover,
+.btn.danger:active {
+  background: red;
+  color: white;
+} */
+/* .user-messsage {
+  margin: auto;
+  width: 90%;
+  border: 1px solid rgb(21, 74, 219);
+  padding: 1rem;
+  border-radius: 3px;
+  background: rgb(169, 169, 206);
+} */
+
+@media (min-width: 768px) {
+  .main-header__nav {
+    display: flex;
+  }
+  /* #side-menu-toggle {
+    display: none;
+  }
+  .user-messsage {
+    width: 30rem;
+  } */
 }
